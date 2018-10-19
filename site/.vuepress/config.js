@@ -9,7 +9,7 @@ module.exports = {
     // 项目仓库地址
     repo: 'd2-projects/d2-awesome',
     // 文档不是放在仓库的根目录下
-    docsDir: 'blog',
+    docsDir: 'site',
     // 菜单
     nav: [
       {

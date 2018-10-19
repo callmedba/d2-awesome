@@ -1,24 +1,24 @@
 {
-  "name": "blog",
+  "name": "d2-awesome",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev blog",
-    "build": "vuepress build blog"
+    "dev": "vuepress dev site",
+    "build": "vuepress build site"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FairyEver/blog.git"
+    "url": "git+https://github.com/d2-projects/d2-awesome"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/FairyEver/blog/issues"
+    "url": "https://github.com/d2-projects/d2-awesome/issues"
   },
-  "homepage": "https://github.com/FairyEver/blog#readme",
+  "homepage": "https://github.com/d2-projects/d2-awesome#readme",
   "devDependencies": {
-    "vuepress": "^0.14.4"
+    "vuepress": "^1.0.0-alpha.13"
   },
   "dependencies": {}
 }
