@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/d2-projects/d2-awesome#readme",
   "devDependencies": {
+    "node-sass": "^4.9.4",
+    "sass-loader": "^7.1.0",
     "vuepress": "^1.0.0-alpha.13"
   },
   "dependencies": {}

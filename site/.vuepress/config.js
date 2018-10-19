@@ -15,7 +15,8 @@ module.exports = {
       {
         text: '测试',
         items: [
-          { text: '测试', link: '/demo/1/' }
+          { text: '语法测试', link: '/demo/code/' },
+          { text: '组件测试', link: '/demo/components/' }
         ]
       }
     ]
