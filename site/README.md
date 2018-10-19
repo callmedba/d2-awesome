@@ -1,6 +1,4 @@
----
-home: true
-heroImage: /logo@2x.png
-actionText: 开始
-actionLink: /
----
+<!-- 首页布局 -->
+<layout-helper-index-component>
+  <img :src="$withBase('/logo/with-text@2x.png')" slot="logo">
+</layout-helper-index-component>

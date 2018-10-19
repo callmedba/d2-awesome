@@ -1,9 +1,16 @@
+const path = require('path')
+
+// 拼接路径
+function resolve (dir) {
+  return path.join(__dirname, dir)
+}
+
 module.exports = {
   base: '/d2-awesome/',
   head: [
-    ['link', { rel: 'icon', href: `/logo@2x.png` }]
+    ['link', { rel: 'icon', href: `/logo/normal@2x.png` }]
   ],
-  title: 'D2 AWESOME',
+  title: '前端资源精选',
   description: '人在江湖走 库多不压身',
   themeConfig: {
     // 项目仓库地址
