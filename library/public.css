@@ -14,3 +14,7 @@
 a {
   text-decoration: none !important;
 }
+
+.hint--bottom:hover:after {
+  border-radius: 4px;
+}
