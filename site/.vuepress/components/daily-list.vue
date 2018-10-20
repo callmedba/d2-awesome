@@ -14,7 +14,7 @@
           <p class="component__item-title">
             <span>{{item.name}}</span>
           </p>
-          <p class="component__item-note">
+          <p v-if="item.note" class="component__item-note">
             <span>{{item.note}}</span>
           </p>
           <p class="component__item-link">
