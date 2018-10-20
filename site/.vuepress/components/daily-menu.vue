@@ -6,7 +6,7 @@
     <aside class="menu">
       <template v-for="(group, index) in menu">
         <p :key="`label-${index}`" class="menu-label">
-          {{group.year}} 年 {{group.mounth}} 月
+          {{group.year}} 年 {{group.mounth}} 月 日报
         </p>
         <ul :key="`list-${index}`" class="menu-list">
           <li v-for="(day, dayIndex) in group.days" :key="dayIndex">
