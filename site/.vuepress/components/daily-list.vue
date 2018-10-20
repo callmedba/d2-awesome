@@ -18,7 +18,13 @@
             <span>{{item.note}}</span>
           </p>
           <p class="component__item-link">
-            详情: <a :href="item.url" target="blank">{{urlSimplify(item.url)}}</a>
+            详情: <a :href="item.url" target="blank">
+              <span
+                class="hint--bottom hint--medium"
+                :aria-label="item.url">
+                {{urlSimplify(item.url)}}
+              </span>
+            </a>
           </p>
         </li>
       </ul>

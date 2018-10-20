@@ -11,6 +11,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/resource/logo/normal@2x.png' }],
     ['link', { rel: 'stylesheet', href: '/library/flex.css' }],
     ['link', { rel: 'stylesheet', href: '/library/bulma.min.css' }],
+    ['link', { rel: 'stylesheet', href: '/library/hint.min.css' }],
     ['link', { rel: 'stylesheet', href: '/library/public.css' }],
     // ['script', { src: '/library/fontawesome-5.3.1.js' }]
   ],
