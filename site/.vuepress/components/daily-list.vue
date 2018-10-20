@@ -41,7 +41,6 @@ export default {
 @import './style/index';
 .component {
   section {
-    margin-top: 2em;
     h2 {
       color: $color__logo--dark;
       border-bottom: none;
@@ -51,6 +50,7 @@ export default {
     ul {
       list-style: none;
       margin: 0px;
+      margin-bottom: 1em;
       li {
         margin: 0px;
         margin-bottom: 1em;
