@@ -23,13 +23,7 @@ module.exports = {
     docsDir: 'site',
     // 菜单
     nav: [
-      {
-        text: '测试',
-        items: [
-          { text: '语法测试', link: '/demo/code/' },
-          { text: '组件测试', link: '/demo/components/' }
-        ]
-      }
+      { text: '日报', link: '/daily/' }
     ]
   }
 }

@@ -64,13 +64,13 @@
         width: 120px;
       }
       .component__card-title {
-        color: $color-logo-dark;
+        color: $color__logo--dark;
         font-size: 1.2em;
         margin: 0px;
         font-weight: bold;
       }
       .component__card-info {
-        color: $color-logo-dark;
+        color: $color__logo--dark;
         font-size: 0.8em;
         margin: 0px;
       }
