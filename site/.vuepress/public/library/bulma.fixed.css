@@ -1,0 +1,12 @@
+.nav-links > .nav-item > .dropdown-wrapper > .dropdown-title > .title {
+  font-size: inherit;
+}
+
+.nav-links > .nav-item > .dropdown-wrapper > .nav-dropdown > .dropdown-item {
+  padding: 0px;
+}
+
+.nav-links > .repo-link > .icon {
+  height: auto;
+  width: auto;
+}

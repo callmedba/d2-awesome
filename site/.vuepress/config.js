@@ -8,7 +8,10 @@ function resolve (dir) {
 module.exports = {
   base: '/d2-awesome/',
   head: [
-    ['link', { rel: 'icon', href: `/logo/normal@2x.png` }]
+    ['link', { rel: 'icon', href: '/resource/logo/normal@2x.png' }],
+    ['link', { rel: 'stylesheet', href: '/library/bulma.min.css' }],
+    ['link', { rel: 'stylesheet', href: '/library/bulma.fixed.css' }],
+    ['script', { src: '/library/fontawesome-5.3.1.js' }]
   ],
   title: '前端资源精选',
   description: '人在江湖走 库多不压身',
