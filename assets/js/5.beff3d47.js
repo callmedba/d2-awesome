@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{167:function(n,e,t){"use strict";t.r(e);var i=t(20),l=Object(i.a)({},function(){var n=this.$createElement;return(this._self._c||n)("div",[this._v("\n  Child\n")])},[],!1,null,null,null);l.options.__file="child.vue";e.default=l.exports}}]);
