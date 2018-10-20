@@ -10,3 +10,7 @@
   height: auto;
   width: auto;
 }
+
+a {
+  text-decoration: none !important;
+}

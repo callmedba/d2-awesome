@@ -1,7 +1,11 @@
-<div flex="main:center">
-  <daily-logo/>
-</div>
+---
+menu:
+- year: 2018
+  mounth: 10
+  days:
+  - 17
+  - 18
+  - 19
+---
 
-* [2018.10.19](./post/2018.10.19.md)
-* [2018.10.18](./post/2018.10.18.md)
-* [2018.10.17](./post/2018.10.17.md)
+<daily-menu v-bind="$page.frontmatter"/>
