@@ -18,8 +18,6 @@ module.exports = {
   title: 'D2收藏库',
   description: '为了创造者',
   themeConfig: {
-    // 项目仓库地址
-    repo: 'd2-projects/d2-awesome',
     // 文档不是放在仓库的根目录下
     docsDir: 'site',
     // 菜单
