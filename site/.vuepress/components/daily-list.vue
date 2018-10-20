@@ -20,7 +20,7 @@
           <p class="component__item-link">
             详情: <a :href="item.url" target="blank">
               <span
-                class="hint--bottom hint--medium"
+                class="hint--bottom hint--medium hint--rounded"
                 :aria-label="item.url">
                 {{urlSimplify(item.url)}}
               </span>
