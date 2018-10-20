@@ -1,6 +1,6 @@
 <template>
   <article class="component">
-    <div flex="main:center">
+    <div class="component__logo" flex="main:center">
       <daily-logo/>
     </div>
     <aside class="menu">
@@ -33,6 +33,9 @@ export default {
 
 <style lang="scss" scoped>
 .component {
+  .component__logo {
+    margin-bottom: 2em;
+  }
   ul {
     list-style: none;
     padding-left: 0px;

@@ -1,6 +1,6 @@
 <template>
   <article class="component">
-    <div flex="main:center">
+    <div class="component__logo" flex="main:center">
       <daily-logo v-bind="$attrs"/>
     </div>
     <section
@@ -53,6 +53,9 @@ export default {
 <style lang="scss" scoped>
 @import './style/index';
 .component {
+  .component__logo {
+    margin-bottom: 2em;
+  }
   section {
     h2 {
       color: $color__logo--dark;
