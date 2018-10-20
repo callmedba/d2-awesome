@@ -14,8 +14,8 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: '/library/public.css' }],
     ['script', { src: '/library/fontawesome-5.3.1.js' }]
   ],
-  title: '前端资源精选',
-  description: '人在江湖走 库多不压身',
+  title: 'D2制造',
+  description: '为了创造者',
   themeConfig: {
     // 项目仓库地址
     repo: 'd2-projects/d2-awesome',

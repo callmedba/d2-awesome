@@ -67,7 +67,6 @@
         color: $color-logo-dark;
         font-size: 1.2em;
         margin: 0px;
-        margin-bottom: 10px;
         font-weight: bold;
       }
       .component__card-info {

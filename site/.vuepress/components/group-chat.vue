@@ -43,7 +43,7 @@ export default {
 <style lang="scss" scoped>
 .component {
   .component__cover {
-    max-width: 320px;
+    max-width: 200px;
     margin-bottom: 10px;
   }
   .component__modal-content {
