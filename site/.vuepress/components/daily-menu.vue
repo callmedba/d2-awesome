@@ -1,7 +1,7 @@
 <template>
   <article class="component">
     <div class="component__logo" flex="main:center">
-      <daily-logo/>
+      <daily-logo class="component__logo-component"/>
     </div>
     <aside class="menu">
       <template v-for="(group, index) in menu">
@@ -32,9 +32,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './style/index.scss';
 .component {
+  user-select: none;
   .component__logo {
+    padding: 1em 0;
     margin-bottom: 2em;
+    background-color: $color__logo-daily--main;
+    border-radius: 2px;
+    .component__logo-component {
+      border: 1px solid #FFF;
+    }
   }
   ul {
     list-style: none;

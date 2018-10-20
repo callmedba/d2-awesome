@@ -53,6 +53,7 @@ export default {
 <style lang="scss" scoped>
 @import './style/index';
 .component {
+  user-select: none;
   .component__logo {
     margin-bottom: 2em;
   }

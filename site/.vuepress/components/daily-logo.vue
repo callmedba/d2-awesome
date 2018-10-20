@@ -45,6 +45,7 @@ export default {
   background: $color__logo-daily--main;
   position: relative;
   border-radius: 2px;
+  user-select: none;
   h1 {
     display: none;
   }
