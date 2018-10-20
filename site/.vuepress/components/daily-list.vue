@@ -18,7 +18,7 @@
             <span>{{item.note}}</span>
           </p>
           <p class="component__item-link">
-            详情: <a :href="item.url">{{item.url}}</a>
+            详情: <a :href="item.url" target="blank">{{item.url}}</a>
           </p>
         </li>
       </ul>
