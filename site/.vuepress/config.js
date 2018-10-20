@@ -22,7 +22,18 @@ module.exports = {
     docsDir: 'site',
     // 菜单
     nav: [
-      { text: '日报', link: '/daily/' }
+      { text: 'D2网址导航', link: '/doing/' },
+      { text: '日报', link: '/daily/' },
+      { text: '资源库', link: '/doing/' },
+      {
+        text: '前端开发',
+        items: [
+          { text: '原生', link: '/doing/' },
+          { text: 'vue.js 专题', link: '/doing/' },
+          { text: 'react 专题', link: '/doing/' },
+          { text: 'angular 专题', link: '/doing/' }
+        ]
+      }
     ]
   }
 }
