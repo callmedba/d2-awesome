@@ -1,5 +1,6 @@
 <template>
   <div class="component">
+    <!-- LOGO -->
     <div class="component__logo">
       <img :src="$withBase('/resource/logo/with-text@2x.png')">
     </div>
@@ -26,13 +27,16 @@
         <p class="component__card-info">社区人人可分享</p>
       </div>
     </div>
+    <!-- footer -->
+    <div class="component__footer">
+      GPL Licensed | Copyright © 2018-present D2 Projects
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 // 公用设置
 @import '../../style/index';
-
 .component {
   user-select: none;
   .component__logo {
@@ -63,6 +67,13 @@
         margin: 0px;
       }
     }
+  }
+  .component__footer {
+    padding: 2.5rem;
+    padding-bottom: 0px;
+    border-top: 1px solid #eaecef;
+    text-align: center;
+    color: #4e6e8e;
   }
 }
 </style>
