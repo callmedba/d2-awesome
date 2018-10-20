@@ -22,5 +22,7 @@
     "sass-loader": "^7.1.0",
     "vuepress": "^1.0.0-alpha.13"
   },
-  "dependencies": {}
+  "dependencies": {
+    "url": "^0.11.0"
+  }
 }

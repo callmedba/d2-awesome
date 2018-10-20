@@ -12,7 +12,7 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: '/library/flex.css' }],
     ['link', { rel: 'stylesheet', href: '/library/bulma.min.css' }],
     ['link', { rel: 'stylesheet', href: '/library/public.css' }],
-    ['script', { src: '/library/fontawesome-5.3.1.js' }]
+    // ['script', { src: '/library/fontawesome-5.3.1.js' }]
   ],
   title: 'D2收藏库',
   description: '为了创造者',

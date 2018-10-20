@@ -18,7 +18,7 @@
             <span>{{item.note}}</span>
           </p>
           <p class="component__item-link">
-            详情: <a :href="item.url" target="blank">{{item.url}}</a>
+            详情: <a :href="item.url" target="blank">{{urlSimplify(item.url)}}</a>
           </p>
         </li>
       </ul>
@@ -27,11 +27,18 @@
 </template>
 
 <script>
+import url from 'url'
 export default {
   props: {
     list: {
       type: Array,
       default: () => []
+    }
+  },
+  methods: {
+    urlSimplify (u) {
+      // https://www.npmjs.com/package/url
+      return url.parse(u).host + ' >'
     }
   }
 }
