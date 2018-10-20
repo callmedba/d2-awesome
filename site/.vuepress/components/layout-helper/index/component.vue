@@ -27,6 +27,10 @@
         <p class="component__card-info">社区人人可分享</p>
       </div>
     </div>
+    <!-- 群广告 -->
+    <div class="component__group-chat">
+      <group-chat/>
+    </div>
     <!-- footer -->
     <div class="component__footer">
       GPL Licensed | Copyright © 2018-present D2 Projects
@@ -46,6 +50,7 @@
     }
   }
   .component__card {
+    padding: 2.5rem;
     .column {
       display: flex;
       justify-content: center;
@@ -67,6 +72,10 @@
         margin: 0px;
       }
     }
+  }
+  .component__group-chat {
+    padding: 2.5rem;
+    border-top: 1px solid #eaecef;
   }
   .component__footer {
     padding: 2.5rem;
