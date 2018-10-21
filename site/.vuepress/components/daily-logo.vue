@@ -2,6 +2,9 @@
   <div class="component" :style="style">
     <h1 v-if="date">{{date}}</h1>
     <img
+      class="component__share-icon"
+      :src="$withBase('/resource/component/daily-logo/share-icon@2x.png')"/>
+    <img
       class="component__text"
       :src="$withBase('/resource/component/daily-logo/text@2x.png')">
     <img
@@ -47,6 +50,9 @@ export default {
   border-radius: 2px;
   user-select: none;
   h1 {
+    display: none;
+  }
+  .component__share-icon {
     display: none;
   }
   .component__text {
