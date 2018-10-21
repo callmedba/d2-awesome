@@ -3,7 +3,7 @@
     <div class="component__logo" flex="main:center">
       <daily-logo class="component__logo-component"/>
     </div>
-    <aside class="menu">
+    <aside class="component__menu menu">
       <template v-for="(group, index) in menu">
         <p :key="`label-${index}`" class="menu-label">
           {{group.year}} 年 {{group.mounth}} 月 日报
@@ -17,6 +17,9 @@
         </ul>
       </template>
     </aside>
+    <div class="component__write-start">
+      <daily-write-start/>
+    </div>
   </article>
 </template>
 
@@ -36,18 +39,27 @@ export default {
 .component {
   user-select: none;
   .component__logo {
-    padding: 1em 0;
+    padding: 4em 0;
     margin-bottom: 2em;
     background-color: $color__logo-daily--main;
-    border-radius: 2px;
     .component__logo-component {
       border: 1px solid #FFF;
     }
   }
-  ul {
-    list-style: none;
-    padding-left: 0px;
-    margin: 0px;
+  .component__menu {
+    max-width: 400px;
+    margin: 0px auto;
+    margin-bottom: 1em;
+    padding: 0px 1em;
+    ul {
+      list-style: none;
+      padding-left: 0px;
+      margin: 0px;
+    }
+  }
+  .component__write-start {
+    max-width: 400px;
+    margin: 0px auto;
   }
 }
 </style>

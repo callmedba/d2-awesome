@@ -1,4 +1,5 @@
 ---
+pageClass: page-daily-index
 menu:
 - year: 2018
   mounth: 10

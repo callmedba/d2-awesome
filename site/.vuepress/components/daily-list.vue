@@ -29,6 +29,7 @@
         </li>
       </ul>
     </section>
+    <daily-write-start/>
   </article>
 </template>
 

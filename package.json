@@ -23,6 +23,7 @@
     "vuepress": "^1.0.0-alpha.13"
   },
   "dependencies": {
+    "copy-to-clipboard": "^3.0.8",
     "url": "^0.11.0"
   }
 }
