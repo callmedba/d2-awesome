@@ -52,9 +52,9 @@ export default {
   h1 {
     display: none;
   }
-  .component__share-icon {
-    display: none;
-  }
+  // .component__share-icon {
+  //   display: none;
+  // }
   .component__text {
     position: absolute;
     width: 140px;
