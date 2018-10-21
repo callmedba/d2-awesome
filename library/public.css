@@ -1,3 +1,9 @@
+/* 全局设置 */
+a {
+  text-decoration: none !important;
+}
+
+/* 解决CSS 库和默认样式的冲突 */
 .nav-links > .nav-item > .dropdown-wrapper > .dropdown-title > .title {
   font-size: inherit;
 }
@@ -11,6 +17,14 @@
   width: auto;
 }
 
-a {
-  text-decoration: none !important;
+/* 特定的页面样式 */
+
+/* 首页 */
+.theme-container.no-sidebar.page-index > .page > .content {
+  max-width: 1000px;
+}
+
+/* awesome 页面 */
+.theme-container.no-sidebar.page-awesome > .page > .content {
+  max-width: 1200px;
 }
