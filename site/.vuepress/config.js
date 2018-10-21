@@ -9,9 +9,9 @@ module.exports = {
   head: [
     ['meta', { name: 'keywords', content: 'awesome,前端插件,前端开发,vue插件,vue组件,设计资源,程序员网址导航,设计师网址导航' }],
     //
-    ['meta', { itemprop: 'name', content: 'D2收藏库' }],
+    ['meta', { itemprop: 'name', content: 'D2 资源库' }],
     ['meta', { itemprop: 'image', content: '/resource/logo/normal.png' }],
-    ['meta', { name: 'description', itemprop: 'description', content: '收集开发和设计相关资源，方便每位创造者' }],
+    ['meta', { name: 'description', itemprop: 'description', content: '收集开发和设计领域相关资源，服务每位创造行业工作者' }],
     //
     ['link', { rel: 'icon', href: '/resource/logo/normal.png' }],
     ['link', { rel: 'stylesheet', href: '/library/flex.css' }],
@@ -21,8 +21,8 @@ module.exports = {
     ['script', {}, 'var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?4f96a6ce565904fcb3257b1d14397f55";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();']
     // ['script', { src: '/library/fontawesome-5.3.1.js' }]
   ],
-  title: 'D2收藏库',
-  description: '收集开发和设计相关资源，方便每位创造者',
+  title: 'D2 资源库',
+  description: '收集开发和设计领域相关资源，服务每位创造行业工作者',
   themeConfig: {
     // 文档不是放在仓库的根目录下
     docsDir: 'site',
