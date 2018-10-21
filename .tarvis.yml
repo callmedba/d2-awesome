@@ -19,4 +19,4 @@ before_install:
   - npm install -g hexo-cli
 
 after_success:
-  - ./qshell qupload config
+  - ./qshell qupload qiniu-config
