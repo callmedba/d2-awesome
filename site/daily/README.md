@@ -1,8 +1,8 @@
 ---
-title: D2 资源库 | 日报
+title: 日报
 meta:
   - itemprop: name
-    content: D2 资源库 | 日报
+    content: 日报
   - itemprop: image
     content: /resource/component/daily-logo/share-icon@2x.png
   - name: description
