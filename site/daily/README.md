@@ -4,6 +4,7 @@ menu:
 - year: 2018
   mounth: 10
   days:
+  - 22
   - 19
   - 18
   - 17
