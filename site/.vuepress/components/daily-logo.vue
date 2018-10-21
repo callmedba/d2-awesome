@@ -1,9 +1,9 @@
 <template>
   <div class="component" :style="style">
     <h1 v-if="date">{{date}}</h1>
-    <img
+    <!-- <img
       class="component__share-icon"
-      :src="$withBase('/resource/component/daily-logo/share-icon@2x.png')"/>
+      :src="$withBase('/resource/component/daily-logo/share-icon@2x.png')"/> -->
     <img
       class="component__text"
       :src="$withBase('/resource/component/daily-logo/text@2x.png')">
