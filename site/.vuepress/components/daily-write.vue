@@ -120,11 +120,14 @@ export default {
   },
   methods: {
     handleSubmit () {
+      // 简单地校验
       if (this.form.href === '') {
         alert('请至少填写链接地址')
         return
       }
+      // https://github.com/sudodoki/copy-to-clipboard
       copy(this.markdown)
+      // 打开模态框
       this.modal.active = true
     }
   }
