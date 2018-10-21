@@ -8,28 +8,28 @@
     <div class="component__card columns is-desktop">
       <div class="column">
         <div flex="dir:top main:center cross:center">
-          <img :src="$withBase('/resource/page/index/icon/code@2x.png')">
+          <img :src="$withBase('/resource/page/index/code@2x.png')">
           <p class="component__card-title">开发</p>
           <p class="component__card-info">工具 轮子 参考</p>
         </div>
       </div>
       <div class="column">
         <div flex="dir:top main:center cross:center">
-          <img :src="$withBase('/resource/page/index/icon/design@2x.png')">
+          <img :src="$withBase('/resource/page/index/design@2x.png')">
           <p class="component__card-title">设计</p>
           <p class="component__card-info">图库 素材 社区</p>
         </div>
       </div>
       <div class="column">
         <div flex="dir:top main:center cross:center">
-          <img :src="$withBase('/resource/page/index/icon/artical@2x.png')">
+          <img :src="$withBase('/resource/page/index/artical@2x.png')">
           <p class="component__card-title">阅读</p>
           <p class="component__card-info">学习站点 优秀文章</p>
         </div>
       </div>
       <div class="column">
         <div flex="dir:top main:center cross:center">
-          <img :src="$withBase('/resource/page/index/icon/github@2x.png')">
+          <img :src="$withBase('/resource/page/index/github@2x.png')">
           <p class="component__card-title">开源</p>
           <p class="component__card-info">社区人人可分享</p>
         </div>
