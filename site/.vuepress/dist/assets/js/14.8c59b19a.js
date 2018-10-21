@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{187:function(t,n,e){"use strict";e.r(n);var i=e(20),s=Object(i.a)({},function(){var t=this.$createElement,n=this._self._c||t;return n("div",{staticClass:"content"},[n("daily-menu",this._b({},"daily-menu",this.$page.frontmatter,!1))],1)},[],!1,null,null,null);s.options.__file="README.md";n.default=s.exports}}]);

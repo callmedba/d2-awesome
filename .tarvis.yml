@@ -1,0 +1,23 @@
+language: node_js
+node_js: stable
+branches:
+  only:
+  - master
+cache:
+  apt: true
+  yarn: true
+  directories:
+  - node_modules
+before_install:
+# AK SK将来会设置到travis的环境变量中
+- ./qshell account $AK $SK
+- curl -o- -L https://yarnpkg.com/install.sh | bash
+- export PATH=$HOME/.yarn/bin:$PATH
+- npm install -g hexo-cli
+install:
+- yarn
+script:
+- npm run build
+after_success:
+# 为上传七牛的配置文件名称，这里我起名为config
+-  ./qshell qupload config
