@@ -8,7 +8,7 @@ function resolve (dir) {
 module.exports = {
   head: [
     ['meta', { name: 'keywords', content: 'awesome,前端插件,前端开发,vue插件,vue组件,设计资源,程序员网址导航,设计师网址导航' }],
-    ['link', { rel: 'icon', href: '/resource/logo/normal@2x.png' }],
+    ['link', { rel: 'icon', href: '/resource/logo/normal.png' }],
     ['link', { rel: 'stylesheet', href: '/library/flex.css' }],
     ['link', { rel: 'stylesheet', href: '/library/bulma.min.css' }],
     ['link', { rel: 'stylesheet', href: '/library/hint.min.css' }],
