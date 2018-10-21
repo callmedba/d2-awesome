@@ -4,7 +4,7 @@ meta:
   - itemprop: name
     content: 日报
   - itemprop: image
-    content: /resource/component/daily-logo/share-icon@2x.png
+    content: /resource/logo/daily-blue-line@2x.png
   - name: description
     itemprop: description
     content: 每天分享来自我们以及社区热心朋友的新发现
