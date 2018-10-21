@@ -24,7 +24,36 @@ a {
   max-width: 1000px;
 }
 
-/* awesome 页面 */
+/* 日报菜单 */
+.theme-container.no-sidebar.page-daily-index > .navbar {
+  border-bottom: 0px;
+}
+.theme-container.no-sidebar.page-daily-index > .page > .content {
+  max-width: inherit;
+  padding: 0px;
+}
+.theme-container.no-sidebar.page-daily-index > .page > .page-edit {
+  display: none;
+}
+
+/* 日报内容页 */
+.theme-container.no-sidebar.page-daily-list > .page > .page-edit {
+  display: none;
+}
+
+/* 日报提交助手 */
+.theme-container.no-sidebar.page-daily-write > .navbar {
+  border-bottom: 0px;
+}
+.theme-container.no-sidebar.page-daily-write > .page > .content {
+  max-width: inherit;
+  padding: 0px;
+}
+.theme-container.no-sidebar.page-daily-write > .page > .page-edit {
+  display: none;
+}
+
+/* awesome 首页 */
 .theme-container.no-sidebar.page-awesome > .page > .content {
   max-width: 1200px;
 }
