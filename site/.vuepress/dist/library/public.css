@@ -1,0 +1,59 @@
+/* 全局设置 */
+a {
+  text-decoration: none !important;
+}
+
+/* 解决CSS 库和默认样式的冲突 */
+.nav-links > .nav-item > .dropdown-wrapper > .dropdown-title > .title {
+  font-size: inherit;
+}
+
+.nav-links > .nav-item > .dropdown-wrapper > .nav-dropdown > .dropdown-item {
+  padding: 0px;
+}
+
+.nav-links > .repo-link > .icon {
+  height: auto;
+  width: auto;
+}
+
+/* 特定的页面样式 */
+
+/* 首页 */
+.theme-container.no-sidebar.page-index > .page > .content {
+  max-width: 1000px;
+}
+
+/* 日报菜单 */
+.theme-container.no-sidebar.page-daily-index > .navbar {
+  border-bottom: 0px;
+}
+.theme-container.no-sidebar.page-daily-index > .page > .content {
+  max-width: inherit;
+  padding: 0px;
+}
+.theme-container.no-sidebar.page-daily-index > .page > .page-edit {
+  display: none;
+}
+
+/* 日报内容页 */
+.theme-container.no-sidebar.page-daily-list > .page > .page-edit {
+  display: none;
+}
+
+/* 日报提交助手 */
+.theme-container.no-sidebar.page-daily-write > .navbar {
+  border-bottom: 0px;
+}
+.theme-container.no-sidebar.page-daily-write > .page > .content {
+  max-width: inherit;
+  padding: 0px;
+}
+.theme-container.no-sidebar.page-daily-write > .page > .page-edit {
+  display: none;
+}
+
+/* awesome 首页 */
+.theme-container.no-sidebar.page-awesome > .page > .content {
+  max-width: 1200px;
+}
