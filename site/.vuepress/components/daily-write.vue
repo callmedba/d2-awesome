@@ -36,6 +36,7 @@
         <div class="control">
           <textarea
             v-model="form.note"
+            rows="2"
             class="textarea"
             placeholder="eg: 用眼神操作浏览网页，看演示就很酷（可以留空）"/>
         </div>
