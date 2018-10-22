@@ -20,3 +20,4 @@ before_install:
 
 after_success:
   - ./qshell qupload qiniu-config
+  - ./qshell cdnrefresh -dirs http://awesome.fairyever.com/
