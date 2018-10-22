@@ -75,7 +75,8 @@
         <section class="modal-card-body">
           <p>感谢您的分享，但是还有一个步骤需要您来完成：</p>
           <p>由于本站为由 <code>vue</code> + <code>markdown</code> 构建纯静态站点，所以您的分享需要以 issue 方式反馈给我们。</p>
-          <p><b>填写内容已经复制到您的剪贴板</b>（其实也可以随便写），请点击下面的按钮跳转至 Github，将其复制进 issue 内容中。（issue 标题请注明“日报提交”）<b>工作日我们将在一小时内处理</b>。</p>
+          <p><b>填写内容已经复制到您的剪贴板</b>（其实也可以随便写），请点击下面的按钮跳转至 Github，将其复制进 issue 内容中。</p>
+          <p><b>issue 标题请注明</b> <code>日报提交 - {{date}}</code>，工作日我们将在一小时内处理。</p>
           <p>
             <a
               class="button is-success"
@@ -102,6 +103,7 @@ export default {
         href: '',
         note: ''
       },
+      date: '',
       modal: {
         active: false
       }
@@ -127,6 +129,14 @@ export default {
       }
       // https://github.com/sudodoki/copy-to-clipboard
       copy(this.markdown)
+      // 计算日期
+      const dt = new Date()
+      let year = dt.getFullYear()
+      let month = dt.getMonth() + 1
+      let day = dt.getDate()
+      month = month < 10 ? '0' + month : month
+      day = day < 10 ? '0' + day : day
+      this.date = `${year}年${month}月${day}日`
       // 打开模态框
       this.modal.active = true
     }
