@@ -18,7 +18,7 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: '/library/bulma.min.css' }],
     ['link', { rel: 'stylesheet', href: '/library/hint.min.css' }],
     ['link', { rel: 'stylesheet', href: '/library/public.css' }],
-    ['script', {}, 'var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?4f96a6ce565904fcb3257b1d14397f55";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();']
+    ['script', {}, 'var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?fec739493bdcbae03ff2154ede1ed6c7";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();']
     // ['script', { src: '/library/fontawesome-5.3.1.js' }]
   ],
   title: 'D2 资源库',
