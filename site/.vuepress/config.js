@@ -12,6 +12,8 @@ module.exports = {
     ['meta', { itemprop: 'name', content: 'D2 资源库' }],
     ['meta', { itemprop: 'image', content: '/resource/logo/normal.png' }],
     ['meta', { name: 'description', itemprop: 'description', content: '收集开发和设计领域相关资源，服务每位创造行业工作者' }],
+    // 百度站长平台验证
+    ['meta', { name: 'baidu-site-verification', content: 'tP5wR69jmE' }],
     //
     ['link', { rel: 'icon', href: '/resource/logo/normal.png' }],
     ['link', { rel: 'stylesheet', href: '/library/flex.css' }],
