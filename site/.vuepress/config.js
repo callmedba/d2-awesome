@@ -31,7 +31,7 @@ module.exports = {
     // 菜单
     nav: [
       { text: '日报', link: '/daily/' },
-      { text: '资源库', link: '/sys/doing.md' }
+      { text: '资源库', link: '/awesome/' }
     ]
   }
 }

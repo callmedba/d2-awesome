@@ -2,4 +2,5 @@
 pageClass: page-awesome
 ---
 
-DOING ...
+<!-- 布局 -->
+<layout-helper-awesome-component/>
