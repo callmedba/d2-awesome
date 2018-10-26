@@ -18,7 +18,7 @@
             <span>{{item.note}}</span>
           </p>
           <p class="component__item-link">
-            详情: <a :href="item.url" target="blank">
+            详情: <a :href="item.url" target="_blank">
               <span
                 class="hint--bottom hint--medium hint--rounded"
                 :aria-label="item.url">
