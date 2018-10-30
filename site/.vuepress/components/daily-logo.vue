@@ -1,13 +1,20 @@
 <template>
   <div class="component" :style="style">
     <h1 v-if="date">{{date}}</h1>
+    <!-- 分享的图标 -->
+    <img
+      class="component__logo"
+      :src="$withBase('/resource/logo/daily-blue-line@2x.png')">
+    <!-- 白色文字 -->
     <img
       class="component__text"
       :src="$withBase('/resource/component/daily-logo/text@2x.png')">
+    <!-- 日期图标 -->
     <img
       v-if="date"
       class="component__icon"
       :src="$withBase('/resource/component/daily-logo/icon@2x.png')">
+    <!-- 日期 -->
     <span class="component__date">{{date}}</span>
   </div>
 </template>
@@ -47,6 +54,9 @@ export default {
   border-radius: 2px;
   user-select: none;
   h1 {
+    display: none;
+  }
+  .component__logo {
     display: none;
   }
   .component__text {
