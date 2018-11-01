@@ -3,6 +3,9 @@
     <div class="component__logo" flex="main:center">
       <daily-logo class="component__logo-component"/>
     </div>
+    <div class="component__write-start">
+      <daily-write-start/>
+    </div>
     <aside class="component__menu menu">
       <template v-for="(group, index) in menu">
         <p :key="`label-${index}`" class="menu-label">
@@ -17,9 +20,6 @@
         </ul>
       </template>
     </aside>
-    <div class="component__write-start">
-      <daily-write-start/>
-    </div>
   </article>
 </template>
 
@@ -46,20 +46,20 @@ export default {
       border: 1px solid #FFF;
     }
   }
+  .component__write-start {
+    max-width: 400px;
+    margin: 0px auto;
+    margin-bottom: 2em;
+  }
   .component__menu {
     max-width: 400px;
     margin: 0px auto;
-    margin-bottom: 1em;
     padding: 0px 1em;
     ul {
       list-style: none;
       padding-left: 0px;
       margin: 0px;
     }
-  }
-  .component__write-start {
-    max-width: 400px;
-    margin: 0px auto;
   }
 }
 </style>
