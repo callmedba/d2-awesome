@@ -1,7 +1,7 @@
 <template>
   <article class="component">
     <div class="component__logo" flex="main:center">
-      <daily-logo v-bind="$attrs"/>
+      <daily-logo :date="date"/>
     </div>
     <section
       v-for="(group, index) in list"
@@ -29,7 +29,12 @@
         </li>
       </ul>
     </section>
-    <daily-write-start/>
+    <div class="component__qr" flex="dir:top main:center cross:center">
+      <qr-component :text="`https://awesome.fairyever.com/daily/post/${date}.html`"/>
+      <p>在移动设备查看</p>
+    </div>
+    <!-- 暂时先不要这部分了 -->
+    <!-- <daily-write-start/> -->
   </article>
 </template>
 
@@ -37,6 +42,10 @@
 import url from 'url'
 export default {
   props: {
+    date: {
+      type: String,
+      default: ''
+    },
     list: {
       type: Array,
       default: () => []
@@ -94,6 +103,12 @@ export default {
           }
         }
       }
+    }
+  }
+  .component__qr {
+    padding-top: 46px;
+    p {
+      margin-top: 10px;
     }
   }
 }
