@@ -9,12 +9,20 @@
         <li v-for="(item, itemIndex) in group.list" :key="itemIndex">
           <p class="component__item-title">
             <span>{{item.name}}</span>
+            <!-- VPN -->
+            <span
+              v-if="item.vpn"
+              class="hint--bottom hint--small hint--rounded"
+              aria-label="需科学上网">
+              <i class="fas fa-globe-asia" style="color: #F56C6C;"></i>
+            </span>
           </p>
           <p v-if="item.note" class="component__item-note">
             <span>{{item.note}}</span>
           </p>
           <p class="component__item-link">
-            传送门 <a :href="item.url" target="_blank">
+            传送门 
+            <a :href="item.url" target="_blank">
               <span
                 class="hint--bottom hint--medium hint--rounded"
                 :aria-label="item.url">
@@ -30,8 +38,8 @@
       <daily-editor :value="editor"/>
     </section>
     <section class="component__qr" flex="dir:top main:center cross:center">
-      <qr-component :text="`https://awesome.fairyever.com/daily/post/${date}.html`"/>
-      <p>在移动设备查看</p>
+      <qr :text="`https://awesome.fairyever.com/daily/post/${date}.html`"/>
+      <p>本页二维码</p>
     </section>
   </article>
 </template>
