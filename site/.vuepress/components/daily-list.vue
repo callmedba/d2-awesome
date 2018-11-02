@@ -13,7 +13,7 @@
             <span
               v-if="item.vpn"
               class="hint--bottom hint--small hint--rounded"
-              aria-label="需科学上网">
+              aria-label="科学上网">
               <i class="fas fa-globe-asia" style="color: #F56C6C;"></i>
             </span>
           </p>
