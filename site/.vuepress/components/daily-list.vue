@@ -1,16 +1,12 @@
 <template>
   <article class="component">
-    <div class="component__logo" flex="main:center">
+    <section class="component__logo" flex="main:center">
       <daily-logo :date="date"/>
-    </div>
-    <section
-      v-for="(group, index) in list"
-      :key="index">
+    </section>
+    <section v-for="(group, index) in list" :key="index">
       <h2>{{group.name}}</h2>
       <ul>
-        <li
-          v-for="(item, itemIndex) in group.list"
-          :key="itemIndex">
+        <li v-for="(item, itemIndex) in group.list" :key="itemIndex">
           <p class="component__item-title">
             <span>{{item.name}}</span>
           </p>
@@ -29,12 +25,13 @@
         </li>
       </ul>
     </section>
-    <div class="component__qr" flex="dir:top main:center cross:center">
+    <section class="component__editor">
+      <daily-editor :value="editor"/>
+    </section>
+    <section class="component__qr" flex="dir:top main:center cross:center">
       <qr-component :text="`https://awesome.fairyever.com/daily/post/${date}.html`"/>
       <p>在移动设备查看</p>
-    </div>
-    <!-- 暂时先不要这部分了 -->
-    <!-- <daily-write-start/> -->
+    </section>
   </article>
 </template>
 
@@ -47,6 +44,10 @@ export default {
       default: ''
     },
     list: {
+      type: Array,
+      default: () => []
+    },
+    editor: {
       type: Array,
       default: () => []
     }
@@ -105,8 +106,10 @@ export default {
       }
     }
   }
+  .component__editor {
+    margin-bottom: 4em;
+  }
   .component__qr {
-    padding-top: 46px;
     p {
       margin-top: 10px;
     }
