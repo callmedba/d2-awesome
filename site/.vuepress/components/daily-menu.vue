@@ -3,8 +3,8 @@
     <div class="component__logo" flex="main:center">
       <daily-logo class="component__logo-component"/>
     </div>
-    <div class="component__write-start">
-      <daily-write-start/>
+    <div class="component__write-start" flex="main:center">
+      <daily-write-start class="button"/>
     </div>
     <aside class="component__menu menu">
       <template v-for="(group, index) in menu">

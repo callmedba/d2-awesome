@@ -11,11 +11,11 @@ export default {
     },
     width: {
       type: Number,
-      default: 200
+      default: 160
     },
     height: {
       type: Number,
-      default: 200
+      default: 160
     },
     colorDark: {
       type: String,
