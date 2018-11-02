@@ -1,11 +1,3 @@
 <template>
-  <div class="component">
-    <a class="button" :href="$withBase('/daily/write.html')">分享你的资源和见闻</a>
-  </div>
+  <a :href="$withBase('/daily/write.html')">分享资源</a>
 </template>
-
-<style lang="scss" scoped>
-.component {
-  text-align: center;
-}
-</style>
