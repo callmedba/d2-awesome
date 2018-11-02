@@ -29,8 +29,8 @@
       <daily-editor :value="editor"/>
     </section>
     <section class="component__qr" flex="dir:top main:center cross:center">
-      <qr-component :text="`https://awesome.fairyever.com/daily/post/${date}.html`"/>
-      <p>在移动设备查看</p>
+      <qr :text="`https://awesome.fairyever.com/daily/post/${date}.html`"/>
+      <p>本页二维码</p>
     </section>
   </article>
 </template>
