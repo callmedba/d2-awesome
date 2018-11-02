@@ -14,11 +14,12 @@
             <span>{{item.note}}</span>
           </p>
           <p class="component__item-link">
-            详情: <a :href="item.url" target="_blank">
+            传送门 <a :href="item.url" target="_blank">
               <span
                 class="hint--bottom hint--medium hint--rounded"
                 :aria-label="item.url">
                 {{urlSimplify(item.url)}}
+                <i class="fas fa-external-link-square-alt"></i>
               </span>
             </a>
           </p>
@@ -55,7 +56,7 @@ export default {
   methods: {
     urlSimplify (u) {
       // https://www.npmjs.com/package/url
-      return url.parse(u).host + ' >'
+      return url.parse(u).host
     }
   }
 }
