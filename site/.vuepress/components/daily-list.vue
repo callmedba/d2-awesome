@@ -21,7 +21,7 @@
               v-if="item.video"
               class="hint--bottom hint--small hint--rounded"
               aria-label="视频资源">
-              <i class="fab fa-youtube" style="color: #F56C6C;"></i>
+              <i class="fab fa-youtube" style="color: #67C23A;"></i>
             </span>            
           </p>
           <p v-if="item.note" class="component__item-note">
