@@ -16,6 +16,13 @@
               aria-label="科学上网">
               <i class="fas fa-globe-asia" style="color: #F56C6C;"></i>
             </span>
+            <!-- video -->
+            <span 
+              v-if="item.video"
+              class="hint--bottom hint--small hint--rounded"
+              aria-label="视频资源">
+              <i class="fab fa-youtube" style="color: #F56C6C;"></i>
+            </span>            
           </p>
           <p v-if="item.note" class="component__item-note">
             <span>{{item.note}}</span>
