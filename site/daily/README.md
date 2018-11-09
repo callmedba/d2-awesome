@@ -11,6 +11,8 @@ menu:
 - year: 2018
   mounth: 11
   days:
+  - 9
+  - 8
   - 7
   - 6
   - 5
