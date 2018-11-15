@@ -13,7 +13,7 @@
         </p>
         <ul :key="`list-${index}`" class="menu-list">
           <li v-for="(day, dayIndex) in group.days" :key="dayIndex">
-            <a :href="`./post/2018.${group.mounth}.${String(day).padStart(2, '0')}.html`">
+            <a :href="`./post/2018/${group.mounth}/${String(day).padStart(2, '0')}.html`">
               {{group.year}}.{{group.mounth}}.{{String(day).padStart(2, '0')}}
             </a>
           </li>
