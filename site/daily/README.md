@@ -9,6 +9,10 @@ meta:
 pageClass: page-daily-index
 menu:
 - year: 2018
+  mounth: 12
+  days:
+  - 3
+- year: 2018
   mounth: 11
   days:
   - 29
