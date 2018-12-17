@@ -12,10 +12,6 @@
       </span>
       {{item.name}}
     </a>
-    <!-- 参与分享的按钮 -->
-    <div class="panel-block">
-      <daily-write-start class="button is-link is-outlined is-fullwidth"/>
-    </div>
   </nav>
 </template>
 

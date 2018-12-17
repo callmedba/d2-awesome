@@ -3,9 +3,6 @@
     <div class="component__logo" flex="main:center">
       <daily-logo class="component__logo-component"/>
     </div>
-    <div class="component__write-start" flex="main:center">
-      <daily-write-start class="button"/>
-    </div>
     <aside class="component__menu menu">
       <template v-for="(group, index) in menu">
         <p :key="`label-${index}`" class="menu-label">
@@ -45,11 +42,6 @@ export default {
     .component__logo-component {
       border: 1px solid #FFF;
     }
-  }
-  .component__write-start {
-    max-width: 400px;
-    margin: 0px auto;
-    margin-bottom: 2em;
   }
   .component__menu {
     max-width: 400px;
