@@ -1,18 +1,23 @@
 <template>
-  <nav class="panel">
-    <p class="panel-heading" style="margin-bottom: 0px;">参与编辑</p>
-    <!-- 参与者列表 -->
-    <a
-      v-for="(item, index) in value"
-      :key="index"
-      :href="item.url"
-      class="panel-block">
-      <span class="panel-icon">
-        <i class="fab" :class="`fa-${item.icon || 'github'}`" aria-hidden="true"></i>
-      </span>
-      {{item.name}}
-    </a>
-  </nav>
+  <div class="card">
+    <div class="card-header">
+      <div class="card-header-title">
+        主要参与人员
+      </div>
+    </div>
+    <div class="card-content">
+      <a
+        v-for="(item, index) in value"
+        :key="index"
+        :href="item.url"
+        class="button is-small daily-editor-link">
+        <span class="icon is-small">
+          <i :class="`fab fa-${item.icon || 'github'}`"></i>
+        </span>
+        <span>{{item.name}}</span>
+      </a>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -33,3 +38,8 @@ export default {
 }
 </script>
 
+<style lang="scss" scoped>
+.daily-editor-link {
+  margin-right: 4px;
+}
+</style>
