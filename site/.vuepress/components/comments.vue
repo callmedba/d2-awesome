@@ -11,12 +11,12 @@
 
 <template>
   <div>
-    <p class="comments-visitors">
+    <p v-if="visitor" class="comments-visitors">
       <span
         :id="pathname"
         class="leancloud-visitors"
-        :data-flag-title="`d2-daily-${date}`">
-        <em class="post-meta-item-text">阅读: </em>
+        :data-flag-title="title">
+        <em class="post-meta-item-text">{{visitorTitle}}: </em>
         <i class="leancloud-visitors-count">pending...</i>
       </span>
     </p>
@@ -27,9 +27,17 @@
 <script>
 export default {
   props: {
-    date: {
+    title: {
       type: String,
       default: ''
+    },
+    visitor: {
+      type: Boolean,
+      default: true
+    },
+    visitorTitle: {
+      type: String,
+      default: '访客'
     }
   },
   data () {
@@ -56,7 +64,7 @@ export default {
         appKey: 'WjVnlLdNGoSvLD6bOqsoDvCB',
         placeholder: '您可以随意评论，也可以在上边附加您的信息后留言',
         avatar: 'retro',
-        visitor: true,
+        visitor: this.visitor,
         pageSize: 100
       })
     }

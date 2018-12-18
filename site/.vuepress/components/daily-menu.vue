@@ -17,6 +17,10 @@
         </ul>
       </template>
     </aside>
+    <!-- 评论 -->
+    <div class="component__comments">
+      <comments title="d2-daily-menu"/>
+    </div>
   </article>
 </template>
 
@@ -52,6 +56,10 @@ export default {
       padding-left: 0px;
       margin: 0px;
     }
+  }
+  .component__comments {
+    max-width: 600px;
+    margin: 0px auto;
   }
 }
 </style>

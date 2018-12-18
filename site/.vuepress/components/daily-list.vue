@@ -42,7 +42,7 @@
       </ul>
     </section>
     <br>
-    <comments :date="date"/>
+    <comments :title="`d2-daily-${date}`"/>
     <br>
     <daily-editor/>
     <br>
