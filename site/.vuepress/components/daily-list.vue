@@ -41,9 +41,12 @@
         </li>
       </ul>
     </section>
-    <section class="component__editor">
-      <daily-editor :value="editor"/>
-    </section>
+    <br>
+    <daily-editor/>
+    <br>
+    <daily-partner/>
+    <br>
+    <br>
     <section class="component__qr" flex="dir:top main:center cross:center">
       <qr :text="`https://awesome.fairyever.com/daily/post/${date}.html`"/>
       <p>本页二维码</p>
@@ -60,10 +63,6 @@ export default {
       default: ''
     },
     list: {
-      type: Array,
-      default: () => []
-    },
-    editor: {
       type: Array,
       default: () => []
     }
@@ -121,9 +120,6 @@ export default {
         }
       }
     }
-  }
-  .component__editor {
-    margin-bottom: 4em;
   }
   .component__qr {
     p {
