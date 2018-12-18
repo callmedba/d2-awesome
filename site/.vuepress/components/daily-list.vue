@@ -70,7 +70,6 @@ export default {
   },
   methods: {
     urlSimplify (u) {
-      // https://www.npmjs.com/package/url
       return url.parse(u).host
     }
   }

@@ -17,7 +17,7 @@
         class="leancloud-visitors"
         :data-flag-title="`d2-daily-${date}`">
         <em class="post-meta-item-text">阅读: </em>
-        <i class="leancloud-visitors-count">0</i>
+        <i class="leancloud-visitors-count">pending...</i>
       </span>
     </p>
     <div id="vcomments"></div>
@@ -25,9 +25,6 @@
 </template>
 
 <script>
-import leancloudStorage from 'leancloud-storage'
-import Valine from 'valine'
-window.AV = leancloudStorage
 export default {
   props: {
     date: {

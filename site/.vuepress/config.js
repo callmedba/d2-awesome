@@ -22,7 +22,10 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: '/library/public.css' }],
     ['script', { src: '/library/qrcode.min.js' }],
     ['script', {}, 'var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?fec739493bdcbae03ff2154ede1ed6c7";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();'],
-    ['script', { src: '/library/fontawesome-5.3.1.js' }]
+    ['script', { src: '/library/fontawesome-5.3.1.js' }],
+    // 评论
+    ['script', { src: '/library/av-min.js' }],
+    ['script', { src: '/library/valine.min.js' }]
   ],
   title: 'D2 资源库',
   description: '收集开发和设计领域相关资源，服务每位创造行业工作者',
