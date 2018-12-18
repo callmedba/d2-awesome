@@ -13,7 +13,7 @@
   <div>
     <p class="comments-visitors">
       <span
-        :id="id"
+        :id="pathname"
         class="leancloud-visitors"
         :data-flag-title="`d2-daily-${date}`">
         <em class="post-meta-item-text">阅读: </em>
@@ -32,21 +32,34 @@ export default {
       default: ''
     }
   },
-  computed: {
-    id () {
-      return window.location.pathname
+  data () {
+    return {
+      pathname: ''
     }
   },
   mounted () {
-    new Valine({
-      el: '#vcomments',
-      appId: 'PRgrWqfjD6bhnahr2Xs6akmW-gzGzoHsz',
-      appKey: 'WjVnlLdNGoSvLD6bOqsoDvCB',
-      placeholder: '您可以随意评论，也可以在上边附加您的信息后留言',
-      avatar: 'retro',
-      visitor: true,
-      pageSize: 100
+    this.updateId()
+    this.$nextTick(() => {
+      this.initValine()
     })
+  },
+  methods: {
+    // 获取标记当前页面的 id 统计访问次数使用
+    updateId () {
+      this.pathname = window.location.pathname
+    },
+    // 初始化评论框
+    initValine () {
+      new Valine({
+        el: '#vcomments',
+        appId: 'PRgrWqfjD6bhnahr2Xs6akmW-gzGzoHsz',
+        appKey: 'WjVnlLdNGoSvLD6bOqsoDvCB',
+        placeholder: '您可以随意评论，也可以在上边附加您的信息后留言',
+        avatar: 'retro',
+        visitor: true,
+        pageSize: 100
+      })
+    }
   }
 }
 </script>
