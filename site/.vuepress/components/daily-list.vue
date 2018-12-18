@@ -42,10 +42,11 @@
       </ul>
     </section>
     <br>
+    <comments :date="date"/>
+    <br>
     <daily-editor/>
     <br>
     <daily-partner/>
-    <br>
     <br>
     <section class="component__qr" flex="dir:top main:center cross:center">
       <qr :text="`https://awesome.fairyever.com/daily/post/${date}.html`"/>
