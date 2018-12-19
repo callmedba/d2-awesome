@@ -13,7 +13,7 @@
           :src="$withBase('/resource/component/daily-partner/juejin.png')">
       </a>
       <a
-        href="https://github.com/521xueweihan"
+        href="https://github.com/521xueweihan/HelloGitHub"
         target="_blank"
         class="button is-large daily-partner--button">
         <img
