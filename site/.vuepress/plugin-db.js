@@ -2,7 +2,9 @@ const fs = require('fs')
 
 
 const header = [ 'name', 'note', 'url', 'date', 'title', 'path' ].map(e => `"${e}"`).join(',')
-fs.writeFile('db.csv', header + '\n')
+fs.writeFile('db.csv', header + '\n', function (error) {
+  if (error) { console.log(error) }
+})
 
 module.exports = {
   extendPageData ($page) {
@@ -38,8 +40,8 @@ module.exports = {
         })
       })
       fs.appendFile('db.csv', rows.join('\n'), function (error) {
-        if (error) return false;
-        console.log('日报资料写入成功');
+        if (error) return false
+        console.log('日报资料写入成功')
       })
     }
   }
