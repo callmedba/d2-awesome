@@ -33,11 +33,11 @@ module.exports = {
   title: 'D2 资源库',
   description: '收集开发和设计领域相关资源，服务每位创造行业工作者',
   themeConfig: {
-    algolia: {
-      apiKey: 'f980792c10e2f0e098549a7263f0b76e',
-      appId: '2KCYQC15HQ',
-      indexName: 'd2-awesome'
-    },
+    // algolia: {
+    //   apiKey: 'f980792c10e2f0e098549a7263f0b76e',
+    //   appId: '2KCYQC15HQ',
+    //   indexName: 'd2-awesome'
+    // },
     // 文档不是放在仓库的根目录下
     docsDir: 'site',
     // 菜单
