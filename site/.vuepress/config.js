@@ -33,6 +33,7 @@ module.exports = {
   title: 'D2 资源库',
   description: '收集开发和设计领域相关资源，服务每位创造行业工作者',
   themeConfig: {
+    search: false,
     // algolia: {
     //   apiKey: 'f980792c10e2f0e098549a7263f0b76e',
     //   appId: '2KCYQC15HQ',
@@ -42,8 +43,8 @@ module.exports = {
     docsDir: 'site',
     // 菜单
     nav: [
-      { text: '日报', link: '/daily/' },
-      { text: '资源库', link: '/awesome/' }
+      { text: '日报', link: '/daily/' }
+      // { text: '资源库', link: '/awesome/' }
     ]
   }
 }
